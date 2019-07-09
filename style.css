@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+
+.adContainer {
+  max-width: 937px;
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+.ads {
+  display: none;
+}
+
+.transition {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*convert individual ad rules to ID*/
+.ad1 {
+  background-image: url(Assets/set01_01_desktop.jpg);
+  display: block;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 270px;
+}
+
+.ad2 {
+  background-image: url(Assets/set01_02_desktop.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 270px;
+}
+
+.ad3 {
+  background-image: url(Assets/set01_03_desktop.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 270px;
+}
+
+.ad4 {
+  background-image: url(Assets/set01_04_desktop.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 270px;
+}
+
+.ad5 {
+  background-image: url(Assets/set01_05_desktop.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 270px;
+}
+
+.logo {
+  background-image: url(Assets/logocopy.png);
+  background-size: cover;
+  position: absolute;
+  width: 144px;
+  height: 34px;
+  top: 5%;
+  left: 2%;
+}
+
+.shade {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.5;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  width: 937px;
+  height: 100px;
+  top: 63%;
+}
+
+.arrowLeft {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /*transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.arrowRight {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /*transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.headline {
+  position: absolute;
+  top: 65%;
+  left: 2%;
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  overflow-wrap: normal;
+}
+
+.summary {
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  font-family: Ubuntu;
+  font-size: 12px;
+  color: white;
+}
+
+.stackPosition {
+  position: absolute;
+  top: 83%;
+  left: 75%;
+  width: auto;
+  padding: 16px 5px;
+  color: white;
+  font-family: Ubuntu;
+  font-weight: lighter;
+  font-size: 13px;
+  /*transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.cta {
+  position: absolute;
+  border-style: solid;
+  border-spacing: 25px;
+  border-color: white;
+  border-radius: 5pt;
+  color: white;
+  border-width: 2px;
+  top: 85%;
+  /* left: 2%; */
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px; 
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.cta:hover{
+border-color: lightsteelblue;
+}
+
+.ctaDesktopHide{
+  display:none;
+}
+
+
+.arrowLeft:hover{
+  color: lightsteelblue;
+}
+
+.arrowRight:hover{
+  color: lightsteelblue;
+}
+
+
+a{
+  color:white;
+}
+
+@media only screen and (max-width: 680px){
+
+  .ad1Mobile {
+    background-image: url(Assets/set01_01_mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    text-align: center;
+  }
+
+  .ad2Mobile {
+    background-image: url(Assets/set01_02_mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    text-align: center
+  }
+
+  .ad3Mobile {
+    background-image: url(Assets/set01_03_mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    text-align: center;
+  }
+
+  .ad4Mobile {
+    background-image: url(Assets/set01_04_mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    text-align: center;
+  }
+
+  .ad5Mobile {
+    background-image: url(Assets/set01_05_mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    text-align: center
+  }
+
+  .mobileShade {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8));
+    opacity: 0.8;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    width: 937px;
+    height: 155px; 
+    top: 63%;
+  }
+
+  .mobileHeadline{
+    width: 100%;
+    left:0%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 0 40px 0 20px;
+    
+  }
+
+  .mobileSummary{
+    top: 73%;
+    left:0%;
+    width: 100%;
+    font-size: 12px; 
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .mobileStackPosition{
+    display: none;
+  }
+
+  .mobileArrowLeft{
+   top: 50%;
+   left:2%;
+   font-size: 35px;
+   font-weight: normal
+  }
+
+  .mobileArrowRight{
+   top: 50%; 
+   font-size: 35px;
+   font-weight: normal
+  }
+
+  .mobileCTA{
+  position: relative;
+  top: 82%;
+  margin: 0% auto;
+  padding: 10px 10px 10px 10px; 
+  display: inline-block;
+}
+
+  .bullet{
+  cursor: pointer;
+  height:10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  top:70%;
+  } 
+
+  .bulletPosition{
+    width: 100%;
+    position: absolute;
+    top: 93%;
+    margin:0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px){
+
+  .miniHeadline{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 5px 0 5px;
+  }
+
+}

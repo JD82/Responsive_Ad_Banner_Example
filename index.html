@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+  <script type="text/javascript" src="functionality.js"></script>
+  <title>Responsive Ad Banner</title>
+</head>
+
+<body onload="adLoad()">
+  <!--Ad Goes Here 937x270-->
+  <div class="adContainer mobileContainer">
+    <!--Start Of Slide1-->
+    <div class=" transition ad1 ads ad1Mobile">
+      <div class="shade mobileShade"></div>
+      <div class="headline mobileHeadline miniHeadline">
+        The Best Staycation Trends Are Here Just In Time For Summer
+      </div>
+      <div class="summary mobileSummary">
+        Are you a homebody?
+      </div>
+      <div class="cta mobileCTA">
+        <a href="https://www.pinterest.com/search/pins/?q=staycation&rs=typed&term_meta[]=staycation%7Ctyped"
+          style="text-decoration: none">Learn
+          More</a>
+      </div>
+      <div class="stackPosition mobileStackPosition">
+        1 of 5
+      </div>
+    </div>
+    <!--End Of Slide1-->
+
+    <!--Start Of Slide2-->
+    <div class="slide transition ad2 ads ad2Mobile ">
+      <div class="shade mobileShade"></div>
+      <div class="headline mobileHeadline miniHeadline">
+        Indoor Gardening Is The Biggest Summer Trend This Year
+      </div>
+      <div class="summary mobileSummary">
+        Make your space greener
+      </div>
+      <div class="cta mobileCTA">
+        <a href="https://www.pinterest.com/search/pins/?q=indoor%20gardening&rs=typed&term_meta[]=indoor%7Ctyped&term_meta[]=gardening%7Ctyped"
+          style="text-decoration: none">Learn
+          More</a>
+      </div>
+      <div class="stackPosition mobileStackPosition">
+        2 of 5
+      </div>
+    </div>
+    <!--End Of Slide2-->
+
+    <!--Start Of Slide3-->
+    <div class="slide transition ad3 ads ad3Mobile">
+      <div class="shade mobileShade"></div>
+      <div class="headline mobileHeadline miniHeadline">
+        The Latest Aromatherapy Scents And Products For Summer
+      </div>
+      <div class="summary mobileSummary">
+        New products in stock
+      </div>
+      <div class="cta mobileCTA">
+        <a href="https://www.pinterest.com/search/pins/?q=Aromatherapy&rs=typed&term_meta[]=Aromatherapy%7Ctyped"
+          style="text-decoration: none">Learn
+          More</a>
+      </div>
+      <div class="stackPosition mobileStackPosition">
+        3 of 5
+      </div>
+    </div>
+    <!--End Of Slide3-->
+
+    <!--Start Of Slide4-->
+    <div class="slide transition ad4 ads ad4Mobile">
+      <div class="shade mobileShade"></div>
+      <div class="headline mobileHeadline miniHeadline">
+        The Hottest New Book Releases Are Here For Summer
+      </div>
+      <div class="summary mobileSummary">
+        Stay in with a good book
+      </div>
+      <div class="cta mobileCTA">
+        <a href="https://www.pinterest.com/search/pins/?q=staycation&rs=typed&term_meta[]=staycation%7Ctyped"
+          style="text-decoration: none">Learn
+          More</a>
+      </div>
+      <div class="stackPosition mobileStackPosition">
+        4 of 5
+      </div>
+    </div>
+    <!--End Of Slide4-->
+
+    <!--Start Of Slide5-->
+    <div class="slide transition ad5 ads ad5Mobile">
+      <div class="shade mobileShade"></div>
+      <div class="headline mobileHeadline miniHeadline">
+        Help Your Indoor Plants to Beat The Summer Heat This Year
+      </div>
+      <div class="summary mobileSummary">
+        Tips for the indoor gardener
+      </div>
+      <div class="cta mobileCTA">
+        <a href="https://www.pinterest.com/search/pins/?q=indoor%20gardening&rs=typed&term_meta[]=indoor%7Ctyped&term_meta[]=gardening%7Ctyped"
+          style="text-decoration: none">Learn
+          More</a>
+      </div>
+      <div class="stackPosition mobileStackPosition">
+        5 of 5
+      </div>
+    </div>
+    <!--End Of Slide5-->
+
+    <div class="logo"></div>
+    <div class="arrowPosition">
+      <a class="arrowLeft mobileArrowLeft" onclick="stack(-1)">&#10094;</a>
+      <a class="arrowRight mobileArrowRight" onclick="stack(1)">&#10095;</a>
+    </div>
+    <div class="bulletPosition">
+      <span class="bullet" onclick="currentAd(1)"></span>
+      <span class="bullet" onclick="currentAd(2)"></span>
+      <span class="bullet" onclick="currentAd(3)"></span>
+      <span class="bullet" onclick="currentAd(4)"></span>
+      <span class="bullet" onclick="currentAd(5)"></span>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
